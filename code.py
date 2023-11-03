@@ -1,4 +1,13 @@
 def read_recipes(filename):
+"""
+    Функция для чтения рецептов из файла и создания словаря.
+
+    Параметры:
+    filename (str): Имя файла с рецептами.
+
+    Возвращает:
+    cook_book (dict): Словарь, содержащий рецепты.
+    """    
     cook_book = {}
     with open(filename, 'r', encoding='utf-8') as file:
         for line in file:
